@@ -1,0 +1,10 @@
+substituent,sigma_para,rate_constant_s_inv
+p-NH2,-0.66,2.8e-6
+p-OCH3,-0.27,1.2e-5
+p-CH3,-0.17,2.5e-5
+H,0.00,7.2e-5
+p-Cl,0.23,1.8e-4
+p-Br,0.23,1.9e-4
+m-Cl,0.37,4.2e-4
+p-CN,0.66,1.5e-3
+p-NO2,0.78,2.8e-3

@@ -1,0 +1,7 @@
+candidate,isotope,rate_constant_s_inv
+Candidate A,H,2.1e-4
+Candidate A,D,1.2e-4
+Candidate B,H,7.2e-5
+Candidate B,D,1.2e-5
+Candidate C,H,1.5e-5
+Candidate C,D,3.5e-6
