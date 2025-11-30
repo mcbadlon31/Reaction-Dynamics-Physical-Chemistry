@@ -277,6 +277,36 @@ where $\Delta^\ddagger G^\circ$ is the standard Gibbs energy of activation.
 \end{frame}
 
 % ===========================================================================
+% Slide: Common Mistakes with TST
+% ===========================================================================
+\begin{frame}{Common Mistakes with TST}
+
+\begin{alertblock}{⚠️ Watch Out For:}
+\begin{enumerate}\itemsep=3pt
+    \item \textbf{Confusing $E_a$ and $\Delta^\ddagger H^\circ$}
+    \begin{itemize}\itemsep=1pt
+        \item They differ by $RT$ (solution) or $2RT$ (gas, bimolecular)
+        \item Relationship: $E_a = \Delta^\ddagger H^\circ + nRT$ where $n = 1$ or $2$
+    \end{itemize}
+
+    \item \textbf{Forgetting transmission coefficient $\kappa$}
+    \begin{itemize}\itemsep=1pt
+        \item Usually $\approx 1$ but not always!
+        \item Tunneling: $\kappa > 1$ (quantum effects)
+        \item Recrossing: $\kappa < 1$ (barrier recrossing)
+    \end{itemize}
+
+    \item \textbf{Using $\ln k$ instead of $\ln(k/T)$ for Eyring plot}
+    \begin{itemize}\itemsep=1pt
+        \item Arrhenius: plot $\ln k$ vs $1/T$ → slope $= -E_a/R$
+        \item Eyring: plot $\ln(k/T)$ vs $1/T$ → slope $= -\Delta^\ddagger H^\circ/R$
+    \end{itemize}
+\end{enumerate}
+\end{alertblock}
+
+\end{frame}
+
+% ===========================================================================
 % Slide: Thermodynamic Formulation
 % ===========================================================================
 \begin{frame}{Thermodynamic Formulation}
@@ -641,7 +671,8 @@ At higher $T$: Negative $\Delta^\ddagger S^\circ$ becomes more unfavorable ($-T\
     % Product potential (same curvature as reactant)
     \addplot[red, thick, domain=2.5:4, samples=100] {3*(x-3.5)^2};
 
-    % ZPE levels: ν ∝ √(k/m), so ZPE_D/ZPE_H = √(m_H/m_D) = 1/√2
+    % ZPE = (1/2)hν where ν ∝ 1/√m (for same force constant k)
+    % So ZPE_D/ZPE_H = √(m_H/m_D) ≈ 1/√2 ≈ 0.707
     % Place H ZPE at 0.6 above minimum (0.5), so ZPE_H level at 1.1
     % D ZPE = 0.6/√2 = 0.424 above minimum, so level at 0.924
     \draw[blue, thick] (axis cs:0.7,1.1) -- (axis cs:1.3,1.1) node[right] {H (higher ZPE)};

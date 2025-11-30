@@ -840,6 +840,47 @@ A photosynthetic reaction center has:
 \end{frame}
 
 % ===========================================================================
+% Slide: Real-World Application - Photosynthesis
+% ===========================================================================
+\begin{frame}{Real-World ET: Photosynthesis}
+
+\textbf{Photosystem II uses Marcus theory principles for high efficiency!}
+
+\vspace{0.2cm}
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+% Simple energy diagram
+\draw[->, thick] (0,0) -- (10,0) node[right] {Time};
+\draw[->, thick] (0,0) -- (0,5) node[above] {Energy};
+
+% Energy levels with ET steps
+\draw[thick, blue, fill=blue!20] (1,4) rectangle (1.8,4.3) node[midway] {\tiny P680*};
+\draw[->, ultra thick, red] (1.8,4.15) -- (2.8,3.5) node[midway, above right] {\footnotesize ET$_1$};
+\draw[thick, blue, fill=blue!20] (2.8,3.3) rectangle (3.6,3.7) node[midway] {\tiny Pheo};
+\draw[->, ultra thick, red] (3.6,3.5) -- (4.6,2.9) node[midway, above right] {\footnotesize ET$_2$};
+\draw[thick, blue, fill=blue!20] (4.6,2.7) rectangle (5.4,3.1) node[midway] {\tiny Q$_A$};
+
+% Back reaction (dotted, slow)
+\draw[<-, ultra thick, red, dashed, opacity=0.5] (2.9,3.8) -- (1.2,4.5);
+\node[red] at (2,4.8) {\scriptsize \textbf{Slow!}};
+\node at (2.5,5.3) {\scriptsize Inverted region};
+
+% Energy labels
+\node[left] at (0,4.15) {\scriptsize High};
+\node[left] at (0,2.9) {\scriptsize Low};
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.1cm}
+\begin{itemize}\itemsep=2pt
+    \item \textbf{Forward ET:} Normal region ($-\Delta G < \lambda$) $\Rightarrow$ \textcolor{green}{Fast!} (ps-ns)
+    \item \textbf{Back ET:} Inverted region ($-\Delta G > \lambda$) $\Rightarrow$ \textcolor{red}{Slow!} (ms-s)
+    \item \textbf{Result:} 99\% quantum efficiency - Marcus theory in action!
+\end{itemize}
+
+\end{frame}
+
+% ===========================================================================
 % Slide: Interactive Resources for Topic 18E
 % ===========================================================================
 \begin{frame}{Interactive Learning: Topic 18E}

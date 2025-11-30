@@ -491,7 +491,10 @@ The collision cross-section depends on collision energy $\varepsilon$:
 \vspace{0.3cm}
 
 \textbf{Step 1: Reduced mass}
-\[ \mu = \frac{m_{H_2} \cdot m_{I_2}}{m_{H_2} + m_{I_2}} = \frac{3.35 \times 10^{-27} \times 4.22 \times 10^{-25}}{4.25 \times 10^{-25}} = 3.32 \times 10^{-27} \text{ kg} \]
+\[ \mu = \frac{m_{H_2} \cdot m_{I_2}}{m_{H_2} + m_{I_2}} = \frac{3.35 \times 10^{-27} \times 4.22 \times 10^{-25}}{3.35 \times 10^{-27} + 4.22 \times 10^{-25}} \approx 3.32 \times 10^{-27} \text{ kg} \]
+
+\vspace{0.1cm}
+\footnotesize (Since $m_{I_2} \gg m_{H_2}$, the denominator $\approx 4.22 \times 10^{-25}$ kg)
 
 \vspace{0.3cm}
 
@@ -1037,6 +1040,34 @@ Refines Lindemann by considering \textit{how} energy is distributed within A$^*$
 \vspace{0.2cm}
 
 \textit{Answers: (1) $\sim 10^{35}$ m$^{-3}$ s$^{-1}$; (2) $e^{-171000/(8.314 \times 600)} \approx 1.7 \times 10^{-15}$; (3) $P = 0.005$, highly orientation-dependent; (4) $\sim 0.04$ torr}
+
+\end{frame}
+
+% ===========================================================================
+% Slide: Topic 18A Summary
+% ===========================================================================
+\begin{frame}{Topic 18A: Key Takeaways}
+
+\textbf{Essential Equations:}
+\begin{itemize}\itemsep=2pt
+    \item \textbf{Collision rate:} $Z_{AB} = \sigma \sqrt{\frac{8k_BT}{\pi\mu}} \mathcal{N}_A \mathcal{N}_B$
+    \item \textbf{Rate constant:} $k_r = P \cdot N_A \sigma \bar{v}_{rel} e^{-E_a/RT}$
+    \item \textbf{A-factor (theory):} $A = N_A \sigma \bar{v}_{rel}$
+    \item \textbf{Steric factor:} $P = \frac{A_{\text{exp}}}{A_{\text{theory}}}$ (typically 0.001-1)
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{When to use Collision Theory:}
+\begin{itemize}\itemsep=2pt
+    \item[✓] Gas-phase reactions
+    \item[✓] Order-of-magnitude estimates
+    \item[✓] Understanding steric effects \& harpoon mechanisms
+    \item[✗] \textbf{NOT} for precise predictions (use TST instead)
+    \item[✗] \textbf{NOT} for solution reactions (diffusion matters)
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Key Insight:} Collisions are necessary but not sufficient - need energy + orientation!
 
 \end{frame}
 
