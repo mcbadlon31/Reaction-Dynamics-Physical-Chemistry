@@ -985,30 +985,59 @@ where $\sigma_0 = 15$ Å$^2$/sr.
 \end{frame}
 
 % ===========================================================================
-% Slide: Practice Problem 4
+% Slide: Practice Problem 4 - Part 1
 % ===========================================================================
 \begin{frame}{Practice Problem 4}
+\small
+\vspace{-0.2cm}
 
 \textbf{Problem:} For H + H$_2$ → H$_2$ + H reaction:
-\begin{itemize}
+\begin{itemize}\itemsep=0pt
     \item Classical barrier: $E_a^{\text{classical}} = 40$ kJ/mol
     \item Measured barrier: $E_a^{\text{obs}} = 32$ kJ/mol
 \end{itemize}
 
-\begin{enumerate}[a)]
+\vspace{0.15cm}
+\begin{enumerate}[a)]\itemsep=2pt
     \item What causes the difference?
-    \item Estimate the effective tunneling distance if the barrier width is 0.5 Å
-    \item Would the isotopic reaction D + D$_2$ → D$_2$ + D show a larger or smaller difference?
+    \item Estimate the effective tunneling distance if barrier width is 0.5 Å
+    \item Would D + D$_2$ → D$_2$ + D show larger or smaller difference?
 \end{enumerate}
 
-\vspace{0.3cm}
+\vspace{0.15cm}
 \textbf{Answers:}
-\begin{itemize}
+\begin{itemize}\itemsep=2pt
     \item[(a)] Quantum tunneling through the barrier
-    \item[(b)] Tunneling reduces effective barrier by $\sim 8$ kJ/mol (20\%)
-    \item[(c)] Smaller difference - heavier mass reduces tunneling probability:
-    \[ P_{\text{tunnel}} \propto \exp(-\sqrt{2m\Delta E} \cdot d/\hbar) \]
+    \item[(b)] Reduces effective barrier by $\sim 8$ kJ/mol (20\%)
+    \item[(c)] Smaller - heavier mass reduces tunneling
 \end{itemize}
+
+\end{frame}
+
+% ===========================================================================
+% Slide: Practice Problem 4 - Part 2 (Tunneling Equation)
+% ===========================================================================
+\begin{frame}{Practice Problem 4 - Tunneling Equation}
+\small
+
+\textbf{Tunneling probability:}
+
+\[ P_{\text{tunnel}} \propto \exp\left(-\frac{\sqrt{2m\Delta E} \cdot d}{\hbar}\right) \]
+
+where:
+\begin{itemize}\itemsep=2pt
+    \item $m$ = particle mass
+    \item $\Delta E$ = barrier height above particle energy
+    \item $d$ = barrier width
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Isotope effect:}
+
+For D vs H: $m_D = 2m_H$, so:
+\[ \frac{P_{\text{tunnel,D}}}{P_{\text{tunnel,H}}} \propto \exp\left(-d\sqrt{m_D}/\hbar\right) / \exp\left(-d\sqrt{m_H}/\hbar\right) = e^{-(\sqrt{2}-1)d\sqrt{m_H}/\hbar} \approx 0.24 \]
+
+Tunneling probability decreases by factor of $\sim$4 for deuterium.
 
 \end{frame}
 
